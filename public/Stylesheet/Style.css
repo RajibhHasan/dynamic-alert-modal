@@ -1,0 +1,144 @@
+body {
+    font-size: 15pt;
+   height: 100vh;
+   overflow: scroll hidden;
+}
+
+.main{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: white;
+  width: 300px; /* Adjust width as needed */
+  transition: transform 0.3s ease;
+  animation: fadeIn 0.3s ease forwards; 
+  z-index:1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+} 
+
+
+
+
+
+
+
+
+.title{
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 2px green;
+  font-family: fantasy;
+  font-weight: 700;
+  font-size: 1.5rem;
+  
+  
+}
+
+.message{
+  width:100%;
+  margin-top:10px;
+  padding: 5px;
+  font-size: 1.2rem;
+  color: black;
+  text-shadow: 2px 2px 2px navajowhite;
+  height:100px;
+  font-family:fantasy;
+  transform: scale(1);
+  
+  
+}
+
+.buttonBox{
+ 
+ width:100%;
+padding: 10px;
+
+color: red;
+height:100px;
+margin-top:10px;
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+
+
+}
+
+.single{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+.okButton{
+  flex-basis: 40%;
+  height: 40px;
+  padding: 5px;
+  border-radius: 20px;
+  background: green;
+  border: none;
+  outline: none;
+  font-family: fantasy;
+  font-size: 18px;
+  box-shadow:3px 3px 2px black;
+}
+
+.cencelButton{
+  flex-basis: 40%;
+height: 40px;
+padding: 5px;
+border-radius: 20px;
+background: red;
+border: none;
+outline: none;
+font-family: fantasy;
+font-size: 18px;
+box-shadow:3px 3px 2px black;
+}
+
+
+
+
+.okButton:focus{
+  background: blue;
+}
+.cencelButton:focus {
+  background: blue;
+}
+
+.imageBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  
+}
+
+.image{
+  width: 60px;
+  height: 60px;
+
+  
+  padding: 5px;
+}
